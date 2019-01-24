@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEBD02"
+    android:weightSum="100">
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:id="@+id/book_image"
+        android:scaleType="fitXY"
+        android:layout_weight="20"
+        android:adjustViewBounds="true"
+        android:src="@drawable/default_user_icon_profile"/>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="50"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:layout_margin="5dp"
+            android:weightSum="100"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/book_name"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Apple" />
+
+            <!--TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="$11.23"
+                android:singleLine="true"
+                android:layout_toRightOf="@+id/book_name"
+                android:layout_toEndOf="@+id/book_name"
+                android:id="@+id/book_price" /-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:layout_margin="5dp"
+            android:weightSum="100"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Author"
+                android:id="@+id/book_author" />
+
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="30"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="100"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Add To Cart"
+            android:focusable="false"
+            android:clickable="true"
+            android:id="@+id/contact_quantity" />
+    </LinearLayout>
+
+</LinearLayout>

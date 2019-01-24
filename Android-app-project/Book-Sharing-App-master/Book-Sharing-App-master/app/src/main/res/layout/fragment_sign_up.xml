@@ -1,0 +1,81 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ary.grocery.SignUpFragment">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0DA4D5"
+        android:weightSum="100">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:text="SIGNUP"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="25dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:hint="Name"
+            android:textColor="#ffffff"
+            android:id="@+id/username_field"
+            android:inputType="textPersonName"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:textColor="#ffffff"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:hint="Email"
+            android:id="@+id/email_signup_field"
+            android:inputType="textEmailAddress"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:textColor="#ffffff"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:hint="Phone Number"
+            android:id="@+id/phonenmber_field"
+            android:inputType="phone"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="#ffffff"
+            android:layout_weight="10"
+            android:hint="Password"
+            android:id="@+id/password_signup_field"
+            android:inputType="textPassword"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:text="Sign Up"
+                android:background="#FB8908"
+                android:id="@+id/signup_buton" />
+
+            <Button
+                android:layout_width="0dp"
+                android:background="#FB8908"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:text="Cancel"
+                android:id="@+id/cancel_button"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>
